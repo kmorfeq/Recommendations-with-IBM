@@ -68,4 +68,28 @@ Number of user_article interaction:  45993
 ```
 
 ## Data Visualization
-The following is the schema for the tables that I'll use in this project:
+The following are some results from the project:
+
+### Top articles read by users
+![GitHub Logo](/pic/Top10articles.png)
+
+### The top 10 recommendations for user_id (20)
+| #  | __article_id__	| __title__	|
+|---|------|----------------------------------------------------|
+|0    |1429.0 |healthcare python streaming application demo|
+|1    |1330.0 |analyze energy consumption in buildings|
+|2    |1431.0 |use xgboost, scikit-learn & ibm watson machine learning apis|
+|3    |1427.0 |deep learning with tensorflow course by big data university|
+|4    |1364.0 |visualize car data with brunel|
+|5    |1314.0 |predicting churn with the spss random tree algorithm|
+|6    |1162.0 |gosales transactions for logistic regression model|
+|7    |1304.0 |insights from new york car accident reports|
+|8    |  43.0 |model bike sharing data with spss|
+|9    |1351.0 |use deep learning for image classification|
+
+### Accuracy of the recommendation engine
+![GitHub Logo](/pic/Top10articles.png)
+
+
+## Blogpost
+http://github.com - automatic!
