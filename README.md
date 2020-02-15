@@ -9,7 +9,12 @@ And part of the project, I'll answer the following 2 questions:
   2. What are the recommended articles for new users
 
 
-## Problem Statement
+## Problem Solving Strategy
+To build the recommendation engine, I'll follow the following steps:
+1. Load datasets ( in this project, I've two csv file )
+2. explore the datasets to gather some insights
+3. clean the datasets, either drop or replace the un-needed values.
+4. Build recommendation engines
 
 
 ## Data Exploration
@@ -53,19 +58,6 @@ Some information about the datasets.
 
 ```python
 # identify number of unique articles with at least one interaction
-print('Number of Unique articles is: ', df.groupby('article_id')['email'].nunique().sort_values(ascending=False).count())
-
-# identify total number of aricles
-print('Total number of articles on the IBM platform: ', df_content['article_id'].nunique(dropna = True))
-
-# identify number of unique users
-print('Number of unique users: ', df['email'].nunique(dropna=True))
-
-# identify number of user-article interactions
-print('Number of user_article interaction: ', df.count()[0])
-```
-```python
-# identify number of unique articles with at least one interaction
 Number of Unique articles is:  714
 # identify total number of aricles
 Total number of articles on the IBM platform:  1051
@@ -74,3 +66,6 @@ Number of unique users:  5148
 # identify number of user-article interactions
 Number of user_article interaction:  45993
 ```
+
+## Data Visualization
+The following is the schema for the tables that I'll use in this project:
