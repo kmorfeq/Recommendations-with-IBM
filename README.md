@@ -25,6 +25,6 @@ The following is the schema for the table:
   - article_id - the ID number of articles - float64
   
 
-'''
+```
 df_content.head()
-'''
+```
