@@ -34,8 +34,20 @@ df.head()
 |3	|1338.0	|ml optimization using cognitive assistant	|06485706b34a5c9bf2a0ecdac41daf7e7654ceb7|
 |4	|1276.0	|deploy your python model as a restful api	|f01220c46fc92c6e6b161b1849de11faacd7ccb2|
 
+Identify number of null values in each column
 
-Since the other table has information about the articles, I'll identify the number of unique emails in the list and which email has read more articles than others
+```python
+df.isna().sum()
+```
+|__column name__ | __Number of Nulls__ |
+|-----|-----|
+|article_id    | 0|
+|title          |0|
+|email         |17|
+
+The only null values were in the email column which means there are 17 articles ( or less since there are duplicates ) were not read by any user.
+
+Since the other table has information about the articles, I'll identify the number of unique emails in the list and which user has read more articles than others
 
 ```python
 # information about email column 
@@ -74,5 +86,20 @@ df_content.head()
 |2	|☰ * Login\r\n * Sign Up\r\n\r\n * Learning Pat...	|Here’s this week’s news in Data Science and Bi...	|This Week in Data Science (April 18, 2017)	|Live|	2|
 |3	|DATALAYER: HIGH THROUGHPUT, LOW LATENCY AT SCA...	|Learn how distributed DBs solve the problem of...	|DataLayer Conference: Boost the performance of...	|Live|	3|
 |4	|Skip navigation Sign in SearchLoading...\r\n\r...	|This video demonstrates the power of IBM DataS...	|Analyze NY Restaurant data using Spark in DSX	|Live|	4|
+
+We can see that some of the content in the doc_body column need some cleaning or correction such in row 2 where there is \r\n in content. But since it'll not impact my findings, it'll not be corrected nor deleted.
+
+Now, I'll Identify number of null values in df_content table to check if dropping rows or replace it is needed.
+
+```python
+df_content.isna().sum()
+```
+|__column name__ | __Number of Nulls__ |
+|-----|-----|
+|doc_body           |14
+|doc_description     |3
+|doc_full_name       |0
+|doc_status          |0
+|article_id          |0
 
 
