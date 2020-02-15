@@ -13,9 +13,9 @@ I aim in my capstone to answer the following 2 questions:
 The following is the schema for the table:
 
 #### user-item-interactions.csv
-  1- article_id - the ID number of articles - float64
-  2- title - the titles of articles - object
-  3- email - email addresses of users who read the articles - object
+  - article_id - the ID number of articles - float64
+  - title - the titles of articles - object
+  - email - email addresses of users who read the articles - object
   
 #### articles_community.csv
   1- doc_body - content of articles - object
