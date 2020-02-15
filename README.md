@@ -17,7 +17,9 @@ The following is the schema for the table:
   - title - the titles of articles - object
   - email - email addresses of users who read the articles - object
 
+
 ```python
+# df content 
 df.head()
 ```
 
@@ -39,5 +41,14 @@ df.head()
   
 
 ```python
+# df_content content
 df_content.head()
 ```
+
+| __index__	| __doc_body__ |	__doc_description__ |	__doc_full_name__ |	__doc_status__ |	__article_id__ |
+|---------|-----------------------------------------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------------|-------------|-------|
+|0	|Skip navigation Sign in SearchLoading...\r\n\r...	|Detect bad readings in real time using Python ...	|Detect Malfunctioning IoT Sensors with Streami...	|Live|	0|
+|1	|No Free Hunch Navigation * kaggle.com\r\n\r\n ...	|See the forest, see the trees. Here lies the c...	|Communicating data science: A guide to present...	|Live|	1|
+|2	|☰ * Login\r\n * Sign Up\r\n\r\n * Learning Pat...	|Here’s this week’s news in Data Science and Bi...	|This Week in Data Science (April 18, 2017)	|Live|	2|
+|3	|DATALAYER: HIGH THROUGHPUT, LOW LATENCY AT SCA...	|Learn how distributed DBs solve the problem of...	|DataLayer Conference: Boost the performance of...	|Live|	3|
+|4	|Skip navigation Sign in SearchLoading...\r\n\r...	|This video demonstrates the power of IBM DataS...	|Analyze NY Restaurant data using Spark in DSX	|Live|	4|
