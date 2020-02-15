@@ -2,8 +2,9 @@
 
 ## Project Overview
 I aim in my capstone to answer the following 2 questions:
-  1- What are the top most read articles
-  2- 
+
+  1. What are the top most read articles
+  2. 
 
 
 ## Problem Statement
@@ -19,7 +20,7 @@ The following is the schema for the table:
 
 
 ```python
-# df content 
+# user-item-interactions.csv content 
 df.head()
 ```
 
@@ -41,7 +42,7 @@ df.head()
   
 
 ```python
-# df_content content
+# articles_community.csv content
 df_content.head()
 ```
 
