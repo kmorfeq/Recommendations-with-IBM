@@ -4,7 +4,7 @@
 I aim in my capstone to answer the following 2 questions:
 
   1. What are the top 10 most read articles
-  2. 
+  2. What are the recommended articles for new users
 
 
 ## Problem Statement
@@ -89,7 +89,7 @@ df_content.head()
 
 We can see that some of the content in the doc_body column need some cleaning or correction such in row 2 where there is \r\n in content. But since it'll not impact my findings, it'll not be corrected nor deleted.
 
-Now, I'll Identify number of null values in df_content table to check if dropping rows or replace it is needed.
+Now, we need to Identify number of null values in df_content table to check if dropping rows is needed.
 
 ```python
 df_content.isna().sum()
@@ -103,3 +103,50 @@ df_content.isna().sum()
 |article_id          |0
 
 
+Next, I'll check if there is any duplicate articles in df_content table.
+
+```python
+# Find and explore duplicate articles
+filt = df_content.duplicated(['article_id'], keep='first')
+df_content.loc[filt]
+```
+| __index__	| __doc_body__ |	__doc_description__ |	__doc_full_name__ |	__doc_status__ |	__article_id__ |
+|---------|-----------------------------------------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------------|-------------|-------|
+|365 	|Follow Sign in / Sign up Home About Insight Da... 	|During the seven-week Insight Data Engineering... 	|Graph-based machine learning 	|Live 	|50
+|692 	|Homepage Follow Sign in / Sign up Homepage * H... 	|One of the earliest documented catalogs was co... 	|How smart catalogs can turn the big data flood... 	|Live 	|221
+|761 	|Homepage Follow Sign in Get started Homepage *... 	|Today’s world of data science leverages data f... 	|Using Apache Spark as a parallel processing fr... 	|Live 	|398
+|970 	|This video shows you how to construct queries ... 	|This video shows you how to construct queries ... 	|Use the Primary Index 	|Live 	|577
+|971 	|Homepage Follow Sign in Get started * Home\r\n... 	|If you are like most data scientists, you are ... 	|Self-service data preparation with IBM Data Re... 	|Live 	|232
+
+we can see that only five articles are duplicated at least once, as above table. Nest step will be to drop all the duplicated and just keep the first enteries.
+
+```python
+# Remove any rows that have the same article_id - only keep the first
+df_content.drop_duplicates('article_id', keep='first', inplace=True)
+```
+
+After dropping the duplicates, I'll identify some information about the datasets.
+
+```python
+# identify number of unique articles with at least one interaction
+print('Number of Unique articles is: ', df.groupby('article_id')['email'].nunique().sort_values(ascending=False).count())
+
+# identify total number of aricles
+print('Total number of articles on the IBM platform: ', df_content['article_id'].nunique(dropna = True))
+
+# identify number of unique users
+print('Number of unique users: ', df['email'].nunique(dropna=True))
+
+# identify number of user-article interactions
+print('Number of user_article interaction: ', df.count()[0])
+```
+```python
+# identify number of unique articles with at least one interaction
+Number of Unique articles is:  714
+# identify total number of aricles
+Total number of articles on the IBM platform:  1051
+# identify number of unique users
+Number of unique users:  5148
+# identify number of user-article interactions
+Number of user_article interaction:  45993
+```
