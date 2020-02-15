@@ -16,6 +16,10 @@ The following is the schema for the table:
   - article_id - the ID number of articles - float64
   - title - the titles of articles - object
   - email - email addresses of users who read the articles - object
+
+```python
+df.head()
+```
   
 #### articles_community.csv
   - doc_body - content of articles - object
@@ -25,6 +29,6 @@ The following is the schema for the table:
   - article_id - the ID number of articles - float64
   
 
-```
+```python
 df_content.head()
 ```
