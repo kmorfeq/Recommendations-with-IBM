@@ -88,7 +88,7 @@ The following are some results from the project:
 |9    |1351.0 |use deep learning for image classification|
 
 ### Accuracy of the recommendation engine
-![GitHub Logo](/pic/Top10articles.png)
+![GitHub Logo](/pic/accuracy.png)
 
 
 ## Blogpost
