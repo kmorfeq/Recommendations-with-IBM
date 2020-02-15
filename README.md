@@ -49,6 +49,8 @@ df.email.describe()
 |__freq__ |                                          364|
 |Name: email | dtype: object
 
+As we can see above, there are 5148 unique email in the table. And the email that read the most article is `2b6c0f514c2f2b04ad3c4583407dccd0810469ee` with 364 read articles.
+
 
 ### Articles Community Table
 #### articles_community.csv
@@ -72,3 +74,5 @@ df_content.head()
 |2	|☰ * Login\r\n * Sign Up\r\n\r\n * Learning Pat...	|Here’s this week’s news in Data Science and Bi...	|This Week in Data Science (April 18, 2017)	|Live|	2|
 |3	|DATALAYER: HIGH THROUGHPUT, LOW LATENCY AT SCA...	|Learn how distributed DBs solve the problem of...	|DataLayer Conference: Boost the performance of...	|Live|	3|
 |4	|Skip navigation Sign in SearchLoading...\r\n\r...	|This video demonstrates the power of IBM DataS...	|Analyze NY Restaurant data using Spark in DSX	|Live|	4|
+
+
