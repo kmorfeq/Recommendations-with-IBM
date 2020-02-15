@@ -3,7 +3,7 @@
 ## Project Overview
 I aim in my capstone to answer the following 2 questions:
 
-  1. What are the top most read articles
+  1. What are the top 10 most read articles
   2. 
 
 
@@ -11,13 +11,15 @@ I aim in my capstone to answer the following 2 questions:
 
 
 ## Data Exploration
-The following is the schema for the table:
+The following is the schema for the tables that I'll use in this project:
 
+### User Item Interactions Table
 #### user-item-interactions.csv
   - article_id - the ID number of articles - float64
   - title - the titles of articles - object
   - email - email addresses of users who read the articles - object
 
+Now, I'll list some of the content in the table to examine the table content
 
 ```python
 # user-item-interactions.csv content 
@@ -33,13 +35,30 @@ df.head()
 |4	|1276.0	|deploy your python model as a restful api	|f01220c46fc92c6e6b161b1849de11faacd7ccb2|
 
 
+Since the other table has information about the articles, I'll identify the number of unique emails in the list and which email has read more articles than others
+
+```python
+# information about email column 
+df.email.describe()
+```
+|  |  |
+| --- | --- |
+|__count__ |                                       45976 |
+|__unique__|                                        5148|
+|__top__  |     2b6c0f514c2f2b04ad3c4583407dccd0810469ee|
+|__freq__ |                                          364|
+|Name: email | dtype: object
+
+
+### Articles Community Table
 #### articles_community.csv
   - doc_body - content of articles - object
   - doc_description - description of articles - object
   - doc_full_name - articles full name - object
   - doc_status - articles status - object
   - article_id - the ID number of articles - float64
-  
+ 
+Now, I'll list some of the content in the table to examine the table content
 
 ```python
 # articles_community.csv content
