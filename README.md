@@ -92,6 +92,21 @@ The following are some results from the project:
 ### Top articles read by users
 ![GitHub Logo](/pic/Top10articles.png)
 
+| #  | __article_id__	| __title__	|
+|---|------|----------------------------------------------------|
+|0    |1429.0 |finding optimal locations of new store using decision optimization|
+|1    |1330.0 |healthcare python streaming application demo|
+|2    |1431.0 |analyze energy consumption in buildings|
+|3    |1427.0 |use xgboost, scikit-learn & ibm watson machine learning apis|
+|4    |1364.0 |visualize car data with brunel|
+|5    |1314.0 |apache spark lab, part 1: basic concepts|
+|6    |1293.0 |predicting churn with the spss random tree algorithm|
+|7    |1170.0 |gosales transactions for logistic regression model|
+|8    |1162.0 |insights from new york car accident reports|
+|9    |1304.0 |use deep learning for image classification|
+
+
+
 ### The top 10 recommendations for user_id (20)
 | #  | __article_id__	| __title__	|
 |---|------|----------------------------------------------------|
