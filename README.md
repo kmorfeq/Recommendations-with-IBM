@@ -5,8 +5,9 @@ This capstone project is part of the Data Science Nanodegree by Udacity
 I aim in my capstone to built a recommendation engine to recommend articles for users, either new users or existings.
 And part of the project, I'll answer the following 2 questions:
 
-  1. What are the top 10 most read articles
-  2. What are the recommended articles for new users
+  1. What are the top 10 most read articles?
+  2. What are the recommended articles for new users?
+  3. What are the recommended articles for an existing user based on articles read by the user?
 
 
 ## Problem Solving Strategy
