@@ -126,4 +126,4 @@ The following are some results from the project:
 
 
 ## Blogpost
-http://github.com - automatic!
+https://medium.com/@ece.kmorfeq_83221/recommendations-with-ibm-a2fbb8006471 - Recommendations with IBM!
