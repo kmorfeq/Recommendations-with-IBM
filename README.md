@@ -70,6 +70,17 @@ Number of user_article interaction:  45993
 ## Data Visualization
 The following are some results from the project:
 
+### Duplicated article_id in the Articles Community Table
+
+| __index__	| __doc_body__ |	__doc_description__ |	__doc_full_name__ |	__doc_status__ |	__article_id__ |
+|---------|-----------------------------------------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------------|-------------|-------|
+|365	|Follow Sign in / Sign up Home About Insight Da...	|During the seven-week Insight Data Engineering...	|Graph-based machine learning	|Live	|50
+|692	|Homepage Follow Sign in / Sign up Homepage * H...	|One of the earliest documented catalogs was co...	|How smart catalogs can turn the big data flood...	|Live	|221
+|761	|Homepage Follow Sign in Get started Homepage ...	|Today’s world of data science leverages data f...	|Using Apache Spark as a parallel processing fr...	|Live	|398
+|970	|This video shows you how to construct queries ...	|This video shows you how to construct queries ...	|Use the Primary Index	|Live	|577
+|971	|Homepage Follow Sign in Get started * Home\r\n...	|If you are like most data scientists, you are ...	|Self-service data preparation with IBM Data Re...	|Live	|232
+
+
 ### Top articles read by users
 ![GitHub Logo](/pic/Top10articles.png)
 
