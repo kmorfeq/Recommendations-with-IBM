@@ -80,6 +80,14 @@ The following are some results from the project:
 |970	|This video shows you how to construct queries ...	|This video shows you how to construct queries ...	|Use the Primary Index	|Live	|577
 |971	|Homepage Follow Sign in Get started * Home\r\n...	|If you are like most data scientists, you are ...	|Self-service data preparation with IBM Data Re...	|Live	|232
 
+### User Item Interaction table after replacing email with user_id
+| __index__	  | __article_id__	| __title__	| __user_id__ |
+|---------|------------|------------------------------------------------|------------------------------------------------|
+|0	|1430.0	|using pixiedust for fast, flexible, and easier...	|1
+|1	|1314.0	|healthcare python streaming application demo	|2
+|2	|1429.0	|use deep learning for image classification	|3
+|3	|1338.0	|ml optimization using cognitive assistant	|4
+|4	|1276.0	|deploy your python model as a restful api	|5
 
 ### Top articles read by users
 ![GitHub Logo](/pic/Top10articles.png)
